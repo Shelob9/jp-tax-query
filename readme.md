@@ -3,6 +3,8 @@ JP Tax Query
 
 Adds a tax_query endpoint to the jp-api route or the [WordPress REST API (WP-API)](https://github.com/WP-API/WP-API). You can pass, in the body of the request a tax_query. See [the codex](http://codex.wordpress.org/Class_Reference/WP_Query#Taxonomy_Parameters) for information on how to make one of those. The request's body can have 'post_type' and 'tax_query' arguments only. All other arguments will be stripped out before passing to WP_Query so don't try it.
 
+<strong>This endpoint does NOT require authentication. Please consider whether or not you really want the whole internet to be able to run tax queries on your site before using.</strong>
+
 ##### TL;DR
 The REST API only lets you filter by one term per taxonomy. This gives you all of the powers of tax_queries.
 

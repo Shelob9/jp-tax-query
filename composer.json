@@ -1,0 +1,24 @@
+{
+    "name"       : "shelob9/jp-tax-query",
+    "description": "Adds a tax-query endpoint to the WordPress REST API",
+    "keywords"   : ["wordpress", "rest-api"],
+    "homepage"   : "https://github.com/Shelob9/jp-tax-query",
+    "license"    : "GPL-2.0+",
+    "authors"    : [
+        {
+            "name"    : "Josh Pollock",
+            "homepage": "http://JoshPress.net/"
+        }
+    ],
+    "require" : {
+        "composer/installers" : "~1.0.0",
+        "php" : ">=5.3.0"
+    },
+    "support"    : {
+        "issues": "https://github.com/Shelob9/jp-tax-query/issues",
+        "source": "https://github.com/Shelob9/jp-tax-query"
+    },
+    "autoload"   : {
+        "classmap": ["class-jp-tax-query.php"]
+    }
+}

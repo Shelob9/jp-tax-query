@@ -8,6 +8,11 @@
  * @link
  * @copyright 2014 Josh Pollock
  */
+
+if ( class_exists( 'JP_API_Tax_Query' ) || ! function_exists( 'json_url' ) ) {
+	return;
+}
+
 if ( ! defined( 'JP_API_ROUTE' ) ) {
 	define( 'JP_API_ROUTE', 'jp-api' );
 }

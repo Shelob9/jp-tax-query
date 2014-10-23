@@ -41,7 +41,7 @@ Alternatively, add this repo to your site/plugin/theme using a Git Submodule or 
     		),
     	),
     );
-    $response = wp_remote_get( json_url, array( 'body' => json_encode( $args );
+    $response = wp_remote_get( json_url( 'jp-api/tax-query') , array( 'body' => json_encode( $args ) ) );
 ```
 
 

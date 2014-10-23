@@ -42,9 +42,15 @@ class JP_API_Tax_Query {
 	 * @return array Modified routes
 	 */
 	public function register_routes( $routes ) {
+
 		$route = JP_API_ROUTE;
 		$routes = array(
-			// Post endpoints
+			//endpoints
+			"/{$route}/tax-query" => array(
+				array(
+					array( $this, 'tax_query' ),      WP_JSON_Server::READABLE | WP_JSON_Server::ACCEPT_JSON
+				),
+			),
 			"/{$route}/tax_query" => array(
 				array(
 					array( $this, 'tax_query' ),      WP_JSON_Server::READABLE | WP_JSON_Server::ACCEPT_JSON

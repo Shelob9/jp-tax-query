@@ -44,7 +44,7 @@ class JP_API_Tax_Query {
 	public function register_routes( $routes ) {
 
 		$route = JP_API_ROUTE;
-		$routes = array(
+		$tax_query_routes = array(
 			//endpoints
 			"/{$route}/tax-query" => array(
 				array(
@@ -58,6 +58,7 @@ class JP_API_Tax_Query {
 			)
 		);
 
+		$routes = array_merge( $tax_query_routes, $routes );
 		return $routes;
 
 	}

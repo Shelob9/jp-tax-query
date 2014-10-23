@@ -19,6 +19,7 @@
         "source": "https://github.com/Shelob9/jp-tax-query"
     },
     "autoload"   : {
-        "classmap": ["class-jp-tax-query.php"]
+        "classmap": ["class-jp-tax-query.php"],
+        "files"   : ["functions.php"]
     }
 }
